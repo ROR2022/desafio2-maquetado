@@ -11,4 +11,25 @@ body {
 .logoDev {
   width: 50px;
   height: 40px;
+}
+
+.noOutline {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav__buttons--left {
+    width: 30vw;
+  }
+  .nav__buttons--rigth {
+    width: 60vw;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .nav__buttons--left {
+    width: 60vw;
+  }
+  .nav__buttons--rigth {
+    width: 30vw;
+  }
 }/*# sourceMappingURL=style.css.map */
