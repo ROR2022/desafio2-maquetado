@@ -15,7 +15,7 @@
 
   <body>
     <nav class="navbar navbar-expand-lg bg-light justify-content-between">
-      <div class="nav__buttons--left">
+      <div class="nav__buttons--left d-lg-flex align-items-lg-center">
         <button
           class="navbar-toggler"
           type="button"
@@ -51,12 +51,21 @@
         <a href="index.html">
           <img class="logoDev" src="../images/logo1.png" alt="logo" />
         </a>
+        <div class="border ms-3 p-2 rounded bg-white d-none d-lg-flex">
+          <input class="border border-0" type="text" placeholder="Search">
+          <a class='btn btn-light' href="#">🔍</a>
+        </div>
       </div>
 
       <div
         class="nav__buttons--rigth d-sm-flex align-items-sm-center justify-content-sm-center"
       >
-        <a class="fs-3 me-2" href="search.html">🔍</a>
+        <a class="fs-3 me-2 d-lg-none" href="search.html">🔍</a>
+
+        <a href="new.html">
+          <button class="btn btn-light btn-link mx-2 text-dark d-none d-lg-inline" type="submit">
+            Login
+          </button></a>
 
         <a href="new.html">
           <button class="btn btn-outline-primary" type="submit">
@@ -67,8 +76,8 @@
     </nav>
 
     <main class="border">
-      <nav class="border">navigation Main</nav>
-      <div class="articulos border">articulos</div>
+      <nav class="border">navigation INDEX</nav>
+      <div class="articulos border">articulos INDEX</div>
     </main>
 
     <footer class="border">este es el footer</footer>
