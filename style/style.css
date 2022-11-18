@@ -17,12 +17,20 @@ body {
   outline: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .nav__buttons--left {
     width: 30vw;
   }
   .nav__buttons--rigth {
     width: 60vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav__buttons--left {
+    width: 60vw;
+  }
+  .nav__buttons--rigth {
+    width: 30vw;
   }
 }
 @media only screen and (min-width: 990px) {
