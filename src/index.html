@@ -14,36 +14,55 @@
   </head>
 
   <body>
-
     <nav class="navbar navbar-expand-lg bg-light justify-content-between">
       <div class="nav__buttons--left">
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <div
+          class="offcanvas offcanvas-start w-75 d-lg-none"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Este es el menu oculto
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>Aqui va el contenido</div>
+          </div>
+        </div>
+
         <a href="index.html">
           <img class="logoDev" src="../images/logo1.png" alt="logo" />
         </a>
-          
-        
       </div>
-      <div class="nav__buttons--rigth d-sm-flex align-items-sm-center justify-content-sm-center">
 
-        <a class="logoSearch fs-3" href="search.html">🔍</a>
-        
+      <div
+        class="nav__buttons--rigth d-sm-flex align-items-sm-center justify-content-sm-center"
+      >
+        <a class="fs-3 me-2" href="search.html">🔍</a>
+
         <a href="new.html">
-        <button class="btn btn-outline-primary" type="submit">
-
-          Create account
-        </button></a>
+          <button class="btn btn-outline-primary" type="submit">
+            Create account
+          </button>
+        </a>
       </div>
     </nav>
 
