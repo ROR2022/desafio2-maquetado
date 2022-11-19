@@ -13,6 +13,10 @@ body {
   height: 40px;
 }
 
+.user__photo {
+  width: 7vw;
+}
+
 .noOutline {
   outline: none;
 }
