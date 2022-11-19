@@ -24,6 +24,37 @@ body {
   .nav__buttons--rigth {
     width: 60vw;
   }
+  .offcanvas-body {
+    width: 100%;
+    height: 150vh;
+    margin-left: -5%;
+  }
+  .offcanvas-body li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-icons {
+    width: 100%;
+    height: 10vh;
+  }
+  .aside-icons img {
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle {
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a {
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li {
+    list-style: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .nav__buttons--left {
@@ -32,6 +63,66 @@ body {
   .nav__buttons--rigth {
     width: 30vw;
   }
+  .offcanvas-body {
+    width: 100%;
+    height: 150vh;
+    margin-left: -5%;
+  }
+  .offcanvas-body li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-icons {
+    width: 100%;
+    height: 10vh;
+    margin-left: 5%;
+  }
+  .aside-icons img {
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle {
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a {
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li {
+    list-style: none;
+  }
+  #aside-list {
+    text-align: left;
+  }
+  #aside-list li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-section-tags {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 45%;
+  }
+  .aside-section-tags h5 {
+    text-align: left;
+    width: 50%;
+    margin-left: 5%;
+  }
+  .aside-section-tags img {
+    width: 50px;
+    height: 25px;
+  }
+  .aside-section-cards {
+    margin: 7.5%;
+    text-align: left;
+  }
+  .aside-section-cards a {
+    font-weight: 700;
+  }
 }
 @media only screen and (min-width: 992px) {
   .nav__buttons--left {
@@ -39,5 +130,36 @@ body {
   }
   .nav__buttons--rigth {
     width: 30vw;
+  }
+  .offcanvas-body {
+    width: 100%;
+    height: 150vh;
+    margin-left: -5%;
+  }
+  .offcanvas-body li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-icons {
+    width: 100%;
+    height: 10vh;
+  }
+  .aside-icons img {
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle {
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a {
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li {
+    list-style: none;
   }
 }/*# sourceMappingURL=style.css.map */
