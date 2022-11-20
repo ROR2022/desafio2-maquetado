@@ -21,5 +21,6 @@
 
 .main__section--ul{
 width: fit-content;
-overflow-x: scroll;
+overflow-x: auto;
+scroll-behavior: smooth;
 }

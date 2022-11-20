@@ -14,7 +14,6 @@
   </head>
 
   <body>
-
     <header>
       <nav class="navbar navbar-expand-md justify-content-around">
         <div
@@ -131,34 +130,46 @@
           />
         </div>
       </nav>
-     </header>
+    </header>
 
-    <main class="border">
-
+    <main class="border bg-light">
       <div class="main__section--search">
-
-        <div class="section__search--buscar m-3 d-flex">
-          <input class="section__search--input" placeholder="Search..." type="text">
-          <div class="section__search--icon fs-3 btn btn-light">🔍</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-2 section__search--buscar m-3 d-flex">
+            <input
+              class="section__search--input"
+              placeholder="Search..."
+              type="text"
+            />
+            <div class="section__search--icon fs-3 btn btn-light">🔍</div>
+          </div>
+          <ul class="col-sm-12 col-md-10 d-flex w-auto p-0 ms-3">
+            <li class="btn btn-light fw-bold">Most Relevant</li>
+            <li class="btn link__efect">Newest</li>
+            <li class="btn link__efect">Oldest</li>
+          </ul>
         </div>
-        <ul class="d-flex w-100 p-0 ms-3">
-          <li class="btn btn-light fw-bold">Most Relevant</li>
-          <li class="btn link__efect">Newest</li>
-          <li class="btn link__efect">Oldest</li>
-        </ul>
-        <ul class="main__section--ul d-flex p-0 ms-3 justify-content-between pe-4 btn">
-          <li class="fw-bold">Posts</li>
-          <li class="ms-2">Podcasts</li>
-          <li class="ms-2">People</li>
-          <li class="ms-2">Tags</li>
-          <li class="ms-2">Comments</li>
-          <li class="ms-2">My posts only</li>
+
+        <ul
+          class="main__section--ul d-flex flex-md-column align-items-start p-0 ms-3 justify-content-between pe-4"
+        >
+          <li
+            class="fw-bold btn main__section--btn text-start rounded bg-white"
+          >
+            Posts
+          </li>
+          <li class="btn main__section--btn text-start rounded">Podcasts</li>
+          <li class="btn main__section--btn text-start rounded">People</li>
+          <li class="btn main__section--btn text-start rounded">Tags</li>
+          <li class="btn main__section--btn text-start rounded">Comments</li>
+          <li class="btn main__section--btn text-start rounded">
+            My posts only
+          </li>
         </ul>
       </div>
 
       <div class="main__section--articles">
-        <div class="card my-3" style="width: 100%;">
-
+        <div class="card my-3" style="width: 100%">
           <div class="card-body text-start">
             <div class="user__data my-3 d-flex w-100">
               <img
@@ -213,8 +224,52 @@
           </div>
         </div>
       </div>
+      <div class="card my-3" style="width: 100%">
+        <div class="card-body text-start">
+          <div class="user__data my-3 d-flex w-100">
+            <img class="user__data--img" src="../images/user__img.jpg" alt="" />
+            <div class="user__data--text">
+              <h4 class="user__data--name">Hafiz Muhammad Bilal</h4>
+              <p class="user__data--date">Nov. 16 (2 days ago)</p>
+            </div>
+          </div>
+          <div class="main__content--data">
+            <h5 class="card-title fw-bolder link__efect">
+              React - Best Practices
+            </h5>
+            <nav class="navbar__hashtags">
+              <ul class="ps-0 d-flex w-100 justify-content-start">
+                <li class="btn btn-light"><small>#react</small></li>
+                <li class="btn btn-light"><small>#webdev</small></li>
+                <li class="btn btn-light"><small>#javascript</small></li>
+                <li class="btn btn-light"><small>#begginers</small></li>
+              </ul>
+            </nav>
+            <div class="card__bottom--text container-fluid d-flex w-100 p-0">
+              <div
+                class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
+              >
+                <div class="card__reactions--likes d-flex btn btn-light">
+                  <div class="like__logo">💟</div>
+                  <div class="like__number ms-1"><small>234</small></div>
+                  <div class="like__text ms-1 d-none d-md-block">Reactions</div>
+                </div>
+                <div class="card__reactions--coments d-flex btn btn-light">
+                  <div class="comment__logo">🗨️</div>
+                  <div class="comment__number ms-1"><small>17</small></div>
+                  <div class="like__text ms-1 d-none d-md-block">Comments</div>
+                </div>
+              </div>
+              <div
+                class="card__other--data d-flex align-items-center justify-content-end w-50"
+              >
+                <div class="data__read"><small>4 min read</small></div>
+                <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </main>
 
     <footer class="border">este es el footer</footer>

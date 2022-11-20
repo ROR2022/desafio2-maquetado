@@ -6,7 +6,6 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 li {
@@ -77,7 +76,8 @@ li {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scroll-behavior: smooth;
   }
   .nav__buttons--left {
     width: 30vw;
@@ -118,6 +118,13 @@ li {
   }
 }
 @media only screen and (min-width: 768px) {
+  .main__section--btn {
+    width: 100%;
+  }
+  .main__section--btn:hover {
+    background-color: white;
+    color: blue;
+  }
   .nav__buttons--left {
     width: 60vw;
   }
