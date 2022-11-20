@@ -30,7 +30,7 @@
 }
 
 .main__section--ul{
-width: fit-content;
+width: max-content;
 overflow-x: auto;
 scroll-behavior: smooth;
 }
@@ -42,4 +42,8 @@ scroll-behavior: smooth;
 .section__search--btn:hover{
  color: blue;
  background-color: white;
+}
+
+.section__nav--menu{
+  margin-left: 2%;
 }

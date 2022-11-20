@@ -77,9 +77,9 @@ li {
     border: 2px solid blue;
   }
   .main__section--ul {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     overflow-x: auto;
     scroll-behavior: smooth;
   }
@@ -89,6 +89,9 @@ li {
   .section__search--btn:hover {
     color: blue;
     background-color: white;
+  }
+  .section__nav--menu {
+    margin-left: 2%;
   }
   .nav__buttons--left {
     width: 30vw;
@@ -137,7 +140,6 @@ li {
     color: blue;
   }
   .section__search--buscar {
-    width: 100;
     border: 1px solid #ddd;
     border-radius: 5px;
   }
@@ -159,6 +161,9 @@ li {
   .section__search--btn:hover {
     color: blue;
     background-color: white;
+  }
+  .section__nav--menu {
+    width: auto;
   }
   .nav__buttons--left {
     width: 60vw;
@@ -237,6 +242,18 @@ li {
   }
 }
 @media only screen and (min-width: 992px) {
+  .section__search--buscar {
+    width: 95%;
+    border: 1px solid black;
+    background-color: green;
+  }
+  .section__nav--menu {
+    margin-left: 2%;
+    width: 95%;
+  }
+  .nav__menu--title {
+    margin-right: auto;
+  }
   .nav__buttons--left {
     width: 60vw;
   }
