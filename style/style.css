@@ -96,4 +96,7 @@ li {
   .header__nav--btn:hover {
     color: white !important;
   }
+  .mongo__listings {
+    line-height: 0%;
+  }
 }/*# sourceMappingURL=style.css.map */
