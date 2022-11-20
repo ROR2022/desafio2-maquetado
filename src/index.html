@@ -19,8 +19,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md bg-light justify-content-around">
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-md justify-content-around">
         <div
           class="nav__buttons--left w-lg-75 d-flex align-items-center justify-content-start"
         >
@@ -76,33 +76,43 @@
         <div
           class="nav__buttons--rigth me-2 d-flex align-items-center justify-content-end"
         >
-          <a class="fs-3 me-2 btn btn-light d-lg-none" href="search.html">🔍</a>
+          <a
+            class="fs-3 me-2 btn btn-light d-md-none d-lg-none"
+            href="search.html"
+            >🔍</a
+          >
 
           <a href="new.html">
             <button
-              class="btn btn-light btn-link me-2 text-dark d-none d-lg-inline"
+              class="header__nav--btn btn btn-outline-primary text-primary fw-bolder me-2 d-none d-md-inline d-lg-inline"
               type="submit"
             >
-              Login
+              Create Post
             </button></a
           >
 
           <a href="#">
             <div class="icon__notifications fs-3 btn btn-light">🔔</div>
           </a>
-          <img class="user__data--img" src="../images/user__img.jpg" alt="foto" />
+          <img
+            class="user__data--img"
+            src="../images/user__img.jpg"
+            alt="foto"
+          />
         </div>
       </nav>
     </header>
-    <main class="row border text-center bg-light">
+    <main class="row text-center bg-light">
       <section class="d-none d-md-block col-md-4 col-lg-3 aside_section border">
         Aside Section
       </section>
 
-      <section class="col-sm-12 col-md-8 col-lg-6 main_section border">
-        <nav class="navbar mt-3">
-          <ul class="d-flex w-100 align-items-center mb-3">
-            <li class="mx-3 fs-4 fw-bold btn btn-light">Relevant</li>
+      <section class="main_section col-sm-12 col-md-8 col-lg-6">
+        <nav class="navbar mt-3 p-0">
+          <ul
+            class="d-flex w-100 align-items-center justify-content-start mb-3 p-0"
+          >
+            <li class="fs-4 fw-bold btn btn-light">Relevant</li>
             <li class="mx-3 btn btn-link">Latest</li>
             <li class="mx-3 btn btn-link">Top</li>
           </ul>
@@ -127,41 +137,149 @@
                   <p class="user__data--date">Nov. 16 (2 days ago)</p>
                 </div>
               </div>
+              <div class="main__content--data">
+                <h5 class="card-title fw-bolder link__efect">
+                  React - Best Practices
+                </h5>
+                <nav class="navbar__hashtags">
+                  <ul class="ps-0 d-flex w-100 justify-content-start">
+                    <li class="btn btn-light"><small>#react</small></li>
+                    <li class="btn btn-light"><small>#webdev</small></li>
+                    <li class="btn btn-light"><small>#javascript</small></li>
+                    <li class="btn btn-light"><small>#begginers</small></li>
+                  </ul>
+                </nav>
+                <div
+                  class="card__bottom--text container-fluid d-flex w-100 p-0"
+                >
+                  <div
+                    class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
+                  >
+                    <div class="card__reactions--likes d-flex btn btn-light">
+                      <div class="like__logo">💟</div>
+                      <div class="like__number ms-1"><small>234</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Reactions
+                      </div>
+                    </div>
+                    <div class="card__reactions--coments d-flex btn btn-light">
+                      <div class="comment__logo">🗨️</div>
+                      <div class="comment__number ms-1"><small>17</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Comments
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card__other--data d-flex align-items-center justify-content-end w-50"
+                  >
+                    <div class="data__read"><small>4 min read</small></div>
+                    <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3 style="width: 100%">
+
+          <div class="card-body text-start">
+            <div class="user__data my-3 d-flex w-100">
+              <img
+                class="user__data--img"
+                src="../images/user__img.jpg"
+                alt=""
+              />
+              <div class="user__data--text">
+                <h4 class="user__data--name">Hafiz Muhammad Bilal</h4>
+                <p class="user__data--date">Nov. 16 (2 days ago)</p>
+              </div>
+            </div>
+            <div class="main__content--data">
               <h5 class="card-title fw-bolder link__efect">
                 React - Best Practices
               </h5>
               <nav class="navbar__hashtags">
-                <ul class="ps-0 d-flex w-100 justify-content-around">
+                <ul class="ps-0 d-flex w-100 justify-content-start">
                   <li class="btn btn-light"><small>#react</small></li>
                   <li class="btn btn-light"><small>#webdev</small></li>
                   <li class="btn btn-light"><small>#javascript</small></li>
                   <li class="btn btn-light"><small>#begginers</small></li>
                 </ul>
               </nav>
-              <div class="container-fluid d-flex w-100 p-0">
-                <div class="card__reactions d-flex justify-content-start align-items-center w-50 p-0">
+              <div class="card__bottom--text container-fluid d-flex w-100 p-0">
+                <div
+                  class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
+                >
                   <div class="card__reactions--likes d-flex btn btn-light">
                     <div class="like__logo">💟</div>
-                    <div class="like__number">234</div>
+                    <div class="like__number ms-1"><small>234</small></div>
+                    <div class="like__text ms-1 d-none d-md-block">
+                      Reactions
+                    </div>
                   </div>
                   <div class="card__reactions--coments d-flex btn btn-light">
                     <div class="comment__logo">🗨️</div>
-                    <div class="comment__number">17</div>
+                    <div class="comment__number ms-1"><small>17</small></div>
+                    <div class="like__text ms-1 d-none d-md-block">
+                      Comments
+                    </div>
                   </div>
                 </div>
-                <div class="card__other--data d-flex align-items-center justify-content-end w-50">
+                <div
+                  class="card__other--data d-flex align-items-center justify-content-end w-50"
+                >
                   <div class="data__read"><small>4 min read</small></div>
                   <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </section>
 
-      <section class="d-none d-lg-block col-lg-3 aside_section border">
-        Mongo Section
+      <section class="aside_section--mongo d-none d-lg-block col-lg-3">
+        <div class="mongo__first--section border rounded mt-4 me-4">
+          <img
+            class="mongo__img w-100 rounded"
+            src="../images/mongo1.png"
+            alt=""
+          />
+          <h5 class="card-title fw-bolder link__efect my-2">
+            React - Best Practices
+          </h5>
+          <ul class="p-0">
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+          </ul>
+          <div class="mongo__buttons d-flex flex-column m-3">
+            <button class="btn btn-primary">Share your Proyect</button>
+            <button class="btn btn-secondary mt-3">See all posts</button>
+          </div>
+        </div>
       </section>
     </main>
 

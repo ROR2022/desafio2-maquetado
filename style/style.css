@@ -70,6 +70,15 @@ li {
   .nav__buttons--rigth {
     width: 30vw;
   }
+  .main__content--data {
+    padding-left: 8%;
+  }
+  .card__bottom--text {
+    font-size: 10px;
+  }
+  .header__nav--btn:hover {
+    color: white !important;
+  }
 }
 @media only screen and (min-width: 992px) {
   .nav__buttons--left {
@@ -77,5 +86,14 @@ li {
   }
   .nav__buttons--rigth {
     width: 30vw;
+  }
+  .mongo__img {
+    cursor: pointer;
+  }
+  .header__nav--btn:hover {
+    color: white;
+  }
+  .header__nav--btn:hover {
+    color: white !important;
   }
 }/*# sourceMappingURL=style.css.map */
