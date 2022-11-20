@@ -101,7 +101,6 @@ li {
   .nav__buttons--rigth {
     width: 30vw;
   }
-<<<<<<< HEAD
   .main__content--data {
     padding-left: 8%;
   }
@@ -110,7 +109,7 @@ li {
   }
   .header__nav--btn:hover {
     color: white !important;
-=======
+  }
   .offcanvas-body {
     width: 100%;
     height: 150vh;
@@ -170,7 +169,6 @@ li {
   }
   .aside-section-cards a {
     font-weight: 700;
->>>>>>> cesar
   }
 }
 @media only screen and (min-width: 992px) {
@@ -180,7 +178,6 @@ li {
   .nav__buttons--rigth {
     width: 30vw;
   }
-<<<<<<< HEAD
   .mongo__img {
     cursor: pointer;
   }
@@ -192,7 +189,7 @@ li {
   }
   .mongo__listings {
     line-height: 0%;
-=======
+  }
   .offcanvas-body {
     width: 100%;
     height: 150vh;
@@ -223,6 +220,5 @@ li {
   }
   .offcanvas-list li {
     list-style: none;
->>>>>>> cesar
   }
 }/*# sourceMappingURL=style.css.map */
