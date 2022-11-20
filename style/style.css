@@ -6,7 +6,6 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 li {
@@ -56,6 +55,41 @@ li {
 }
 
 @media only screen and (max-width: 767px) {
+  .main__section--search .row {
+    width: 95%;
+  }
+  .section__search--buscar {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .section__search--input {
+    width: 90%;
+    margin: 2%;
+    border: none;
+    outline: none;
+    padding: 1%;
+  }
+  .section__search--buscar:hover {
+    border: 1px solid gray;
+  }
+  .section__search--buscar:focus-within {
+    border: 2px solid blue;
+  }
+  .main__section--ul {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .section__search--icon {
+    font-size: 30px;
+  }
+  .section__search--btn:hover {
+    color: blue;
+    background-color: white;
+  }
   .nav__buttons--left {
     width: 30vw;
   }
@@ -95,6 +129,37 @@ li {
   }
 }
 @media only screen and (min-width: 768px) {
+  .main__section--btn {
+    width: 100%;
+  }
+  .main__section--btn:hover {
+    background-color: white;
+    color: blue;
+  }
+  .section__search--buscar {
+    width: 100;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .section__search--input {
+    width: 90%;
+    margin: 2%;
+    border: none;
+    outline: none;
+  }
+  .section__search--icon {
+    font-size: 20px;
+  }
+  .section__search--buscar:hover {
+    border: 1px solid gray;
+  }
+  .section__search--buscar:focus-within {
+    border: 2px solid blue;
+  }
+  .section__search--btn:hover {
+    color: blue;
+    background-color: white;
+  }
   .nav__buttons--left {
     width: 60vw;
   }

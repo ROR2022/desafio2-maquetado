@@ -1,0 +1,37 @@
+
+.main__section--btn{
+  width: 100%;
+}
+.main__section--btn:hover{
+  background-color: white;
+  color: blue;
+}
+
+.section__search--buscar{
+  width: 100;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+ }
+
+ .section__search--input{
+  width: 90%;
+  margin: 2%;
+  border: none;
+  outline: none;
+  
+}
+.section__search--icon{
+  font-size: 20px;
+}
+
+.section__search--buscar:hover{
+ border: 1px solid gray;
+}
+.section__search--buscar:focus-within{
+  border: 2px solid blue;
+}
+
+.section__search--btn:hover{
+  color: blue;
+  background-color: white;
+ }
