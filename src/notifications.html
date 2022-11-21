@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/iconLogo.ico"
+      type="image/x-icon"
+    />
+    <title>Desafio2 Maquetado-Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md justify-content-around">
+        <div
+          class="nav__buttons--left w-lg-75 d-flex align-items-center justify-content-start"
+        >
+          <button
+            class="navbar-toggler noOutline border border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="../images/icon-menu.svg" alt="" />
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start w-75 d-md-none d-lg-none"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                DEV Community 👩‍💻👨‍💻
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row vh-100">
+                <div class="col-12">
+                  <ul class="offcanvas-list">
+                    <li><a href="#">🏠 Home</a></li>
+                    <li><a href="#">📖 Reading List</a></li>
+                    <li><a href="#">📃 Listings</a></li>
+                    <li><a href="#">🎙 Podcasts</a></li>
+                    <li><a href="#">🎥 Videos</a></li>
+                    <li><a href="#">🏷 Tags</a></li>
+                    <li><a href="#">💡 FAQ</a></li>
+                    <li><a href="#">🛍 Forem Shop</a></li>
+                    <li><a href="#">♥ Sponsors</a></li>
+                    <li><a href="#">⁉ About</a></li>
+                    <li><a href="#">📯 Contact</a></li>
+                    <li><a href="#">📖 Guides</a></li>
+                    <li><a href="#">🤔 Software Comparisons</a></li>
+                  </ul>
+                  <div class="offcanvas-subtitle"><h5>Other</h5></div>
+
+                  <ul class="offcanvas-list">
+                    <li><a href="#">👍 Code of Conduct</a></li>
+                    <li><a href="#">😎 Privacy Policy</a></li>
+                    <li><a href="#">📜 Terms of use</a></li>
+                  </ul>
+                  <div class="aside-icons">
+                    <div class="row d-flex justify-content-around">
+                      <img src="../images/twitter.png" alt="Twitter-icon" />
+                      <img src="../images/facebook.png" alt="Facebook-icon" />
+                      <img src="../images/github.png" alt="Github-icon" />
+                      <img src="../images/instagram.png" alt="Instagram-logo" />
+                      <img src="../images/twitch.png" alt="twitch-logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html">
+            <img class="logoDev ms-1" src="../images/logo1.png" alt="logo" />
+          </a>
+
+          <div
+            class="border ms-3 p-1 w-75 rounded bg-white d-none d-md-flex d-lg-flex justify-content-between"
+          >
+            <input
+              class="border border-0 w-75"
+              type="text"
+              style="outline: none"
+              placeholder="Search"
+            />
+            <a class="btn btn-light fs-5" href="#">🔍</a>
+          </div>
+        </div>
+
+        <div
+          class="nav__buttons--rigth me-2 d-flex align-items-center justify-content-end"
+        >
+          <a
+            class="fs-3 me-2 btn btn-light d-md-none d-lg-none"
+            href="search.html"
+            >🔍</a
+          >
+
+          <a href="new.html">
+            <button
+              class="header__nav--btn btn btn-outline-primary text-primary fw-bolder me-2 d-none d-md-inline d-lg-inline"
+              type="submit"
+            >
+              Create Post
+            </button></a
+          >
+
+          <a href="notifications.html">
+            <div class="icon__notifications fs-3 btn btn-light">🔔</div>
+          </a>
+
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="border border-0 rounded w-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              class="user__data--img"
+              src="../images/user__img.jpg"
+              alt="foto"
+            />
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div
+                    class="modal__name d-flex flex-column btn btn-light btn-light text-start"
+                  >
+                    <h1 class="fs-5" id="exampleModalLabel">
+                      Hafiz Muhammad Bilal
+                    </h1>
+                    <h4 class="fs-6"><small>@HafizMB</small></h4>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul
+                    class="p-0 d-flex flex-column align-items-start justify-content-start w-100"
+                  >
+                    <li class="btn btn-light btn-link w-100 text-start">
+                      Dashboard
+                    </li>
+                    <li class="btn btn-light btn-link w-100 text-start">
+                      Create Post
+                    </li>
+                    <li class="btn btn-light btn-link w-100 text-start">
+                      Reading List
+                    </li>
+                    <li class="btn btn-light btn-link w-100 text-start">
+                      Settings
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-link btn-light"
+                    data-bs-dismiss="modal"
+                  >
+                    Sign Out
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-100 d-flex flex-column align-items-center bg-light">
+      <nav class="main__nav w-100">
+        <ul class="p-0 d-flex justify-content-between pe-4 mt-3">
+          <li class="h1 ms-2">Notifications</li>
+          <li class="btn btn-light">Settings</li>
+        </ul>
+      </nav>
+      <section class="row main__section">
+        <nav class="col-sm-12 col-md-3 main__section--nav">
+          <ul class="p-0 d-flex justify-content-around flex-md-column align-items-md-start">
+            <li class="btn btn-light w-100 text-start">All</li>
+            <li class="btn btn-light w-100 text-start">Comments</li>
+            <li class="btn btn-light w-100 text-start">Posts</li>
+          </ul>
+        </nav>
+
+        <div class="col-sm-12 col-md-9 main__section--articles">
+          <div class="card m-3" style="width: 90%">
+            <div class="centrando__img w-100 d-flex justify-content-center m-3">
+              <img
+                src="../images/devtoImg1.jpg"
+                class="card-img-top w-25 border rounded-circle"
+                alt="devtoImg1"
+              />
+            </div>
+
+            <div class="card-body">
+              <p class="card-text text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 90%">
+            <div class="centrando__img w-100 d-flex justify-content-center m-3">
+              <img
+                src="../images/devtoImg1.jpg"
+                class="card-img-top w-25 border rounded-circle"
+                alt="devtoImg1"
+              />
+            </div>
+
+            <div class="card-body">
+              <p class="card-text text-center">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-bg-secondary text-center">
+      <p class="p-3">
+        <small class="p-5">
+          <a class="link__efect" href="#">DEV Community 👩‍💻👨‍💻 —</a> A
+          constructive and inclusive social network for software developers.
+          With you every step of your journey. Built on Forem — the open source
+          software that powers DEV and other inclusive communities. Made with
+          love and Ruby on Rails. DEV Community 👩‍💻👨‍💻 © 2016 - 2022.
+        </small>
+      </p>
+      <div class="footer__img fs-3">🌴</div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
