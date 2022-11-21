@@ -128,23 +128,79 @@
           <a href="#">
             <div class="icon__notifications fs-3 btn btn-light">🔔</div>
           </a>
+          
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="border border-0 rounded w-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
           <img
-            class="user__data--img"
-            src="../images/user__img.jpg"
-            alt="foto"
-          />
+          class="user__data--img"
+          src="../images/user__img.jpg"
+          alt="foto"
+        />
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal__name d-flex flex-column btn btn-light btn-light text-start">
+                    <h1 class="fs-5" id="exampleModalLabel">
+                      Hafiz Muhammad Bilal
+                    </h1>
+                    <h4 class="fs-6"><small>@HafizMB</small></h4>
+                  </div>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul class="p-0 d-flex flex-column align-items-start justify-content-start w-100">
+                    <li class="btn btn-light btn-link w-100 text-start">Dashboard</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Create Post</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Reading List</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Settings</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-link btn-light"
+                    data-bs-dismiss="modal"
+                  >
+                    Sign Out
+                  </button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <main class="row text-center bg-light">
-
       <section class="d-none d-md-block col-md-4 col-lg-3 aside_section border">
-
-        <section class="d-none d-md-flex col-md-4 col-lg-3 aside_section border">
+        <section
+          class="d-none d-md-flex col-md-4 col-lg-3 aside_section border"
+        >
           <div class="row vh-100" id="aside-section">
             <div class="col-12" id="aside-list">
-              <ul class="offcanvas-list" >
+              <ul class="offcanvas-list">
                 <li><a href="#">🏠 Home</a></li>
                 <li><a href="#">📖 Reading List</a></li>
                 <li><a href="#">📃 Listings</a></li>
@@ -160,7 +216,7 @@
                 <li><a href="#">🤔 Software Comparisons</a></li>
               </ul>
               <div class="offcanvas-subtitle"><h5>Other</h5></div>
-  
+
               <ul class="offcanvas-list">
                 <li><a href="#">👍 Code of Conduct</a></li>
                 <li><a href="#">😎 Privacy Policy</a></li>
@@ -180,21 +236,34 @@
               <div class="aside-section-tags-header">
                 <div class="row d-flex justify-content-between">
                   <h5>My Tags</h5>
-                  <img src="../images/setting.png" alt="settings-icon">
+                  <img src="../images/setting.png" alt="settings-icon" />
                 </div>
               </div>
             </div>
             <div class="aside-section-cards">
-              <div class="card" style="width: 18rem;">
-                <img src="../images/aside-card-1.PNG" class="card-img-top" alt="...">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../images/aside-card-1.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Calling all early-career developers & coding mentors!</h5>
-                  <p class="card-text">Join CodeNewbie Community: a supportive space for coding newbies to connect & express themselves.</p>
+                  <h5 class="card-title">
+                    Calling all early-career developers & coding mentors!
+                  </h5>
+                  <p class="card-text">
+                    Join CodeNewbie Community: a supportive space for coding
+                    newbies to connect & express themselves.
+                  </p>
                   <a href="#">->Get in on the fun!</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="../images/aside-card-2.PNG" class="card-img-top" alt="...">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../images/aside-card-2.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
                   <h5 class="card-title h4">The Forem Shop is Here!</h5>
                   <a href="#">>>Shop Forem, DEV, and CodeNewbie merch</a>
@@ -216,7 +285,7 @@
           </ul>
         </nav>
 
-        <div class="articulos container-fluid">
+        <div class="main__section--articles container-fluid">
           <div class="card" style="width: 100%">
             <img
               src="../images/react_universe.png"
@@ -280,55 +349,57 @@
           </div>
 
           <div class="card my-3" style="width: 100%">
-
-          <div class="card-body text-start">
-            <div class="user__data my-3 d-flex w-100">
-              <img
-                class="user__data--img"
-                src="../images/user__img.jpg"
-                alt=""
-              />
-              <div class="user__data--text">
-                <h4 class="user__data--name">Hafiz Muhammad Bilal</h4>
-                <p class="user__data--date">Nov. 16 (2 days ago)</p>
-              </div>
-            </div>
-            <div class="main__content--data">
-              <h5 class="card-title fw-bolder link__efect">
-                React - Best Practices
-              </h5>
-              <nav class="navbar__hashtags">
-                <ul class="ps-0 d-flex w-100 justify-content-start">
-                  <li class="btn btn-light"><small>#react</small></li>
-                  <li class="btn btn-light"><small>#webdev</small></li>
-                  <li class="btn btn-light"><small>#javascript</small></li>
-                  <li class="btn btn-light"><small>#begginers</small></li>
-                </ul>
-              </nav>
-              <div class="card__bottom--text container-fluid d-flex w-100 p-0">
-                <div
-                  class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
-                >
-                  <div class="card__reactions--likes d-flex btn btn-light">
-                    <div class="like__logo">💟</div>
-                    <div class="like__number ms-1"><small>234</small></div>
-                    <div class="like__text ms-1 d-none d-md-block">
-                      Reactions
-                    </div>
-                  </div>
-                  <div class="card__reactions--coments d-flex btn btn-light">
-                    <div class="comment__logo">🗨️</div>
-                    <div class="comment__number ms-1"><small>17</small></div>
-                    <div class="like__text ms-1 d-none d-md-block">
-                      Comments
-                    </div>
-                  </div>
+            <div class="card-body text-start">
+              <div class="user__data my-3 d-flex w-100">
+                <img
+                  class="user__data--img"
+                  src="../images/user__img.jpg"
+                  alt=""
+                />
+                <div class="user__data--text">
+                  <h4 class="user__data--name">Hafiz Muhammad Bilal</h4>
+                  <p class="user__data--date">Nov. 16 (2 days ago)</p>
                 </div>
+              </div>
+              <div class="main__content--data">
+                <h5 class="card-title fw-bolder link__efect">
+                  React - Best Practices
+                </h5>
+                <nav class="navbar__hashtags">
+                  <ul class="ps-0 d-flex w-100 justify-content-start">
+                    <li class="btn btn-light"><small>#react</small></li>
+                    <li class="btn btn-light"><small>#webdev</small></li>
+                    <li class="btn btn-light"><small>#javascript</small></li>
+                    <li class="btn btn-light"><small>#begginers</small></li>
+                  </ul>
+                </nav>
                 <div
-                  class="card__other--data d-flex align-items-center justify-content-end w-50"
+                  class="card__bottom--text container-fluid d-flex w-100 p-0"
                 >
-                  <div class="data__read"><small>4 min read</small></div>
-                  <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
+                  <div
+                    class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
+                  >
+                    <div class="card__reactions--likes d-flex btn btn-light">
+                      <div class="like__logo">💟</div>
+                      <div class="like__number ms-1"><small>234</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Reactions
+                      </div>
+                    </div>
+                    <div class="card__reactions--coments d-flex btn btn-light">
+                      <div class="comment__logo">🗨️</div>
+                      <div class="comment__number ms-1"><small>17</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Comments
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card__other--data d-flex align-items-center justify-content-end w-50"
+                  >
+                    <div class="data__read"><small>4 min read</small></div>
+                    <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -421,7 +492,7 @@
         </div>
 
         <div class="mongo__third--section border rounded mt-4 me-4 mb-3">
-          <p class="fs-3 p-2 link__efect  text-start border-bottom fw-bold">
+          <p class="fs-3 p-2 link__efect text-start border-bottom fw-bold">
             <small>#help</small>
           </p>
           <ul class="p-0 mb-0">
