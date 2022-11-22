@@ -53,5 +53,64 @@
   .offcanvas-list li{
     list-style: none;
   }
+  .aside-icons{
+    width: 80%;
+    height: 10vh;
+    margin-left: 5%;
+  }
+  .aside-icons img{
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle{
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a{
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li{
+    list-style: none;
+  }
+
+
+
+  #aside-list{
+    text-align: left;
+    li{
+      width: 80%;
+      height: 40px;
+    }
+  }
+  .aside-section-tags{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 45%;
+    h5{
+      text-align: left;
+      width: 50%;
+      margin-left: 5%;
+    }
+    img{
+      width:50px;
+      height: 25px;
+    }
+  }
+  .aside-section-cards{
+    width: 100%;
+    margin: 5%;
+    text-align: left;
+    a{
+      font-weight: 700;
+    }
+    img{
+      width: 100%;
+      height: 45%;
+    }
+  }
 
 }

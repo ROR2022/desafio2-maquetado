@@ -37,6 +37,15 @@
   .offcanvas-list li{
     list-style: none;
   }
-  
+  #footer{
+    width: 100%;
+    a{
+      text-decoration: none;
+    }
+    .footer__body{
+      background-color: #d6d6d7;
+      line-height: 2.0;
+    }
+  }
   
 }

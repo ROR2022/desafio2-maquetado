@@ -170,6 +170,16 @@ li {
   .offcanvas-list li {
     list-style: none;
   }
+  #footer {
+    width: 100%;
+  }
+  #footer a {
+    text-decoration: none;
+  }
+  #footer .footer__body {
+    background-color: #d6d6d7;
+    line-height: 2;
+  }
 }
 @media only screen and (min-width: 768px) {
   .main__section--btn {
@@ -304,18 +314,30 @@ li {
     height: 25px;
   }
   .aside-section-cards {
-    width: 80%;
-    margin: 7.5%;
+    width: 70%;
+    margin: 5%;
+    height: auto;
     text-align: left;
   }
   .aside-section-cards a {
     font-weight: 700;
   }
-  #footer {
-    position: absolute;
-    bottom: 0;
+  .aside-section-cards img {
     width: 100%;
-    height: 2.5rem;
+    height: 45%;
+  }
+  #footer {
+    padding-top: 500px;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+  }
+  #footer a {
+    text-decoration: none;
+  }
+  #footer .footer__body {
+    background-color: #d6d6d7;
+    line-height: 2;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -379,5 +401,61 @@ li {
   }
   .offcanvas-list li {
     list-style: none;
+  }
+  .aside-icons {
+    width: 80%;
+    height: 10vh;
+    margin-left: 5%;
+  }
+  .aside-icons img {
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle {
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a {
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li {
+    list-style: none;
+  }
+  #aside-list {
+    text-align: left;
+  }
+  #aside-list li {
+    width: 80%;
+    height: 40px;
+  }
+  .aside-section-tags {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 45%;
+  }
+  .aside-section-tags h5 {
+    text-align: left;
+    width: 50%;
+    margin-left: 5%;
+  }
+  .aside-section-tags img {
+    width: 50px;
+    height: 25px;
+  }
+  .aside-section-cards {
+    width: 100%;
+    margin: 5%;
+    text-align: left;
+  }
+  .aside-section-cards a {
+    font-weight: 700;
+  }
+  .aside-section-cards img {
+    width: 100%;
+    height: 45%;
   }
 }/*# sourceMappingURL=style.css.map */
