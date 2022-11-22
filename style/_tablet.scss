@@ -19,16 +19,18 @@
     color: white !important;
   }
   .offcanvas-body{
-    width: 100%;
-    height: 150vh;
+    width: 80%;
+    height: 100vh;
     margin-left: -5%;
+    border: none;
   }
   .offcanvas-body li{
     width: 100%;
     height: 40px;
+    border: none;
   }
   .aside-icons{
-    width: 100%;
+    width: 80%;
     height: 10vh;
     margin-left: 5%;
   }
@@ -50,15 +52,20 @@
   .offcanvas-list li{
     list-style: none;
   }
+  #aside-section{
+    width: 100%;
+    height: 100vh;
+  }
+
   #aside-list{
     text-align: left;
     li{
-      width: 100%;
+      width: 80%;
       height: 40px;
     }
   }
   .aside-section-tags{
-    width: 100%;
+    width: 80%;
     margin-top: 5%;
     margin-bottom: 45%;
     h5{
@@ -72,10 +79,14 @@
     }
   }
   .aside-section-cards{
-    margin: 7.5%;
+    width: 80%;
+    margin: 5%
     text-align: left;
     a{
       font-weight: 700;
     }
   }
+
+  }
+
 }
