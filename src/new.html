@@ -14,17 +14,84 @@
   </head>
 
   <body>
+    <header>
+      <nav class="navbar navbar-expand-md bg-light justify-content-around">
+        <div
+          class="nav__buttons--left w-lg-75 d-flex align-items-center justify-content-start"
+        >
+          <button
+            class="navbar-toggler noOutline border border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="../images/icon-menu.svg" alt="" />
+          </button>
 
-   <header>
-    <a href="index.html">Regresar</a>
-   </header>
+          <div
+            class="offcanvas offcanvas-start w-75 d-md-none d-lg-none"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Este es el menu oculto
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>Aqui va el contenido</div>
+            </div>
+          </div>
 
-    <main>
-      <nav class="border">Aqui va lo que hay en New User</nav>
-      
-    </main>
+          <a href="index.html">
+            <img class="logoDev ms-1" src="../images/logo1.png" alt="logo" />
+          </a>
 
-    <footer class="border">este es el footer</footer>
+          <div
+            class="border ms-3 p-1 w-75 rounded bg-white d-none d-md-flex d-lg-flex justify-content-between"
+          >
+            <input
+              class="border border-0 w-75"
+              type="text"
+              style="outline: none"
+              placeholder="Search"
+            />
+            <a class="btn btn-light fs-5" href="#">🔍</a>
+          </div>
+        </div>
+
+        <div
+          class="nav__buttons--rigth me-2 d-flex align-items-center justify-content-end"
+        >
+          <a class="fs-3 me-2 btn btn-light d-lg-none" href="search.html">🔍</a>
+
+          <a href="new.html">
+            <button
+              class="btn btn-light btn-link me-2 text-dark d-none d-lg-inline"
+              type="submit"
+            >
+              Login
+            </button></a
+          >
+
+          <a href="new.html">
+            <button class="btn btn-outline-primary" type="submit">
+              Create account
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
