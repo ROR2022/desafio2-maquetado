@@ -14,16 +14,171 @@
   </head>
 
   <body>
+    <header>
+      <nav class="navbar navbar-expand-md bg-light justify-content-around">
+        <div
+          class="nav__buttons--left w-lg-75 d-flex align-items-center justify-content-start"
+        >
+          <button
+            class="navbar-toggler noOutline border border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="../images/icon-menu.svg" alt="" />
+          </button>
 
-   <header>
-    <a href="index.html">Regresar</a>
-   </header>
+          <div
+            class="offcanvas offcanvas-start w-75 d-md-none d-lg-none"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Este es el menu oculto
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>Aqui va el contenido</div>
+            </div>
+          </div>
+
+          <a href="index.html">
+            <img class="logoDev ms-1" src="../images/logo1.png" alt="logo" />
+          </a>
+
+          <div
+            class="border ms-3 p-1 w-75 rounded bg-white d-none d-md-flex d-lg-flex justify-content-between"
+          >
+            <input
+              class="border border-0 w-75"
+              type="text"
+              style="outline: none"
+              placeholder="Search"
+            />
+            <a class="btn btn-light fs-5" href="#">🔍</a>
+          </div>
+        </div>
+
+        <div
+          class="nav__buttons--rigth me-2 d-flex align-items-center justify-content-end"
+        >
+          <a class="fs-3 me-2 btn btn-light d-lg-none" href="search.html">🔍</a>
+
+          <a href="new.html">
+            <button
+              class="btn btn-light btn-link me-2 text-dark d-none d-lg-inline"
+              type="submit"
+            >
+              Login
+            </button></a
+          >
+
+          <a href="new.html">
+            <button class="btn btn-outline-primary" type="submit">
+              Create account
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <nav class="border">Aqui va lo que hay en New User</nav>
+      <div>
+        <div class="card" style="width: 100%">
+          <img
+            src="../images/react_universe.png"
+            class="card-img-top"
+            alt="react_universe"
+          />
+          <div class="card-body text-start">
+            <div class="user__data my-3 d-flex w-100">
+              <img
+                class="user__data--img"
+                src="../images/user__img.jpg"
+                alt=""
+              />
+              <div class="user__data--text">
+                <h4 class="user__data--name">Hafiz Muhammad Bilal</h4>
+                <p class="user__data--date">Nov. 16 (2 days ago)</p>
+              </div>
+            </div>
+            <div class="main__content--data">
+              <h5 class="card-title fw-bolder link__efect">
+                React - Best Practices
+              </h5>
+              <nav class="navbar__hashtags">
+                <ul class="ps-0 d-flex w-100 justify-content-start">
+                  <li class="btn btn-light"><small>#react</small></li>
+                  <li class="btn btn-light"><small>#webdev</small></li>
+                  <li class="btn btn-light"><small>#javascript</small></li>
+                  <li class="btn btn-light"><small>#begginers</small></li>
+                </ul>
+              </nav>
+              <p>
+                While working on a React App, following these coding conventions
+                will give you a better development experience <span class="fs-2 fw-bold">VS Code is Highly
+                  Recommended as IDE</span> Visual Studio Code has several features that
+                a React developer loves. It gives a lot of useful extensions to
+                make the development environment better. For React, here are
+                some useful extensions which will assist you during development
+                Prettier ES Lint JavaScript (ES6) code snippets Reactjs code
+                snippets Auto import <span class="fs-2 fw-bold">Use ES6 Syntax</span> Clean code is always
+                appreciated. In JavaScript, you can adopt ES6 syntax to make
+                your code cleaner. Write Arrow Functions
+              </p>
+              <img src="../images/Arrow Functions.png" alt="Arrow Functions">
+              <div class="card__bottom--text container-fluid d-flex w-100 p-0">
+                <div
+                  class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
+                >
+                  <div class="card__reactions--likes d-flex btn btn-light">
+                    <div class="like__logo">💟</div>
+                    <div class="like__number ms-1"><small>234</small></div>
+                    <div class="like__text ms-1 d-none d-md-block">
+                      Reactions
+                    </div>
+                  </div>
+                  <div class="card__reactions--coments d-flex btn btn-light">
+                    <div class="comment__logo">🗨️</div>
+                    <div class="comment__number ms-1"><small>17</small></div>
+                    <div class="like__text ms-1 d-none d-md-block">
+                      Comments
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card__other--data d-flex align-items-center justify-content-end w-50"
+                >
+                  <div class="data__read"><small>4 min read</small></div>
+                  <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-    <footer class="border">este es el footer</footer>
+    <footer class="text-bg-secondary text-center">
+      <p class="p-3">
+        <small class="p-5">
+          <a class="link__efect" href="#">DEV Community 👩‍💻👨‍💻 —</a> A
+          constructive and inclusive social network for software developers.
+          With you every step of your journey. Built on Forem — the open source
+          software that powers DEV and other inclusive communities. Made with
+          love and Ruby on Rails. DEV Community 👩‍💻👨‍💻 © 2016 - 2022.
+        </small>
+      </p>
+      <div class="footer__img fs-3">🌴</div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
