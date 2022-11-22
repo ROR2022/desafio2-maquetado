@@ -14,8 +14,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md bg-light justify-content-around">
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-md justify-content-around">
         <div
           class="nav__buttons--left w-lg-75 d-flex align-items-center justify-content-start"
         >
@@ -37,7 +37,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                Este es el menu oculto
+                DEV Community 👩‍💻👨‍💻
               </h5>
               <button
                 type="button"
@@ -47,11 +47,45 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-              <div>Aqui va el contenido</div>
+              <div class="row vh-100">
+                <div class="col-12">
+                  <ul class="offcanvas-list">
+                    <li><a href="#">🏠 Home</a></li>
+                    <li><a href="#">📖 Reading List</a></li>
+                    <li><a href="#">📃 Listings</a></li>
+                    <li><a href="#">🎙 Podcasts</a></li>
+                    <li><a href="#">🎥 Videos</a></li>
+                    <li><a href="#">🏷 Tags</a></li>
+                    <li><a href="#">💡 FAQ</a></li>
+                    <li><a href="#">🛍 Forem Shop</a></li>
+                    <li><a href="#">♥ Sponsors</a></li>
+                    <li><a href="#">⁉ About</a></li>
+                    <li><a href="#">📯 Contact</a></li>
+                    <li><a href="#">📖 Guides</a></li>
+                    <li><a href="#">🤔 Software Comparisons</a></li>
+                  </ul>
+                  <div class="offcanvas-subtitle"><h5>Other</h5></div>
+
+                  <ul class="offcanvas-list">
+                    <li><a href="#">👍 Code of Conduct</a></li>
+                    <li><a href="#">😎 Privacy Policy</a></li>
+                    <li><a href="#">📜 Terms of use</a></li>
+                  </ul>
+                  <div class="aside-icons">
+                    <div class="row d-flex justify-content-around">
+                      <img src="../images/twitter.png" alt="Twitter-icon" />
+                      <img src="../images/facebook.png" alt="Facebook-icon" />
+                      <img src="../images/github.png" alt="Github-icon" />
+                      <img src="../images/instagram.png" alt="Instagram-logo" />
+                      <img src="../images/twitch.png" alt="twitch-logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <a href="index.html">
+          <a href="../src/index.html">
             <img class="logoDev ms-1" src="../images/logo1.png" alt="logo" />
           </a>
 
@@ -71,22 +105,85 @@
         <div
           class="nav__buttons--rigth me-2 d-flex align-items-center justify-content-end"
         >
-          <a class="fs-3 me-2 btn btn-light d-lg-none" href="search.html">🔍</a>
+          <a
+            class="fs-3 me-2 btn btn-light d-md-none d-lg-none"
+            href="../src/search.html"
+            >🔍</a
+          >
 
-          <a href="new.html">
+          <a href="../src/create.html">
             <button
-              class="btn btn-light btn-link me-2 text-dark d-none d-lg-inline"
+              class="header__nav--btn btn btn-outline-primary text-primary fw-bolder me-2 d-none d-md-inline d-lg-inline"
               type="submit"
             >
-              Login
+              Create Post
             </button></a
           >
 
-          <a href="new.html">
-            <button class="btn btn-outline-primary" type="submit">
-              Create account
-            </button>
+          <a href="../src/notifications.html">
+            <div class="icon__notifications fs-3 btn btn-light">🔔</div>
           </a>
+          
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="border border-0 rounded w-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+          <img
+          class="user__data--img"
+          src="../images/user__img.jpg"
+          alt="foto"
+        />
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal__name d-flex flex-column btn btn-light btn-light text-start">
+                    <h1 class="fs-5" id="exampleModalLabel">
+                      Hafiz Muhammad Bilal
+                    </h1>
+                    <h4 class="fs-6"><small>@HafizMB</small></h4>
+                  </div>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul class="p-0 d-flex flex-column align-items-start justify-content-start w-100">
+                    <li class="btn btn-light btn-link w-100 text-start">Dashboard</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Create Post</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Reading List</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Settings</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-link btn-light"
+                    data-bs-dismiss="modal"
+                  >
+                    Sign Out
+                  </button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
