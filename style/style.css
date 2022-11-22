@@ -8,36 +8,367 @@ body {
   min-height: 100vh;
 }
 
-.logoDev {
-  width: 50px;
-  height: 40px;
+li {
+  list-style: none;
 }
 
 .noOutline {
   outline: none;
 }
 
+.logoDev {
+  width: 50px;
+  height: 40px;
+}
+
+.link__efect:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.data__read {
+  cursor: pointer;
+}
+
+.user__data {
+  cursor: pointer;
+}
+
+.user__data--img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.user__data--img:hover {
+  border: 1px solid aqua;
+}
+
+.user__data--name {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user__data--date {
+  font-size: 12px;
+  line-height: 12px;
+}
+
 @media only screen and (max-width: 767px) {
+  .main__section--search .row {
+    width: 95%;
+  }
+  .section__search--buscar {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .section__search--input {
+    width: 90%;
+    margin: 2%;
+    border: none;
+    outline: none;
+    padding: 1%;
+  }
+  .section__search--buscar:hover {
+    border: 1px solid gray;
+  }
+  .section__search--buscar:focus-within {
+    border: 2px solid blue;
+  }
+  .main__section--ul {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .section__search--icon {
+    font-size: 30px;
+  }
+  .section__search--btn:hover {
+    color: blue;
+    background-color: white;
+  }
+  .section__nav--menu {
+    margin-left: 2%;
+  }
+  .main__form--content {
+    width: 100vw;
+    height: 35vh;
+    resize: none;
+    font-family: monospace;
+    outline: none;
+  }
+  .main__form--section {
+    width: 100vw;
+    height: 28vh;
+    outline: none;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .main__form--input {
+    width: 50%;
+    position: relative;
+  }
+  .main__form--inputLabel {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    position: relative;
+    text-align: start;
+  }
+  .main__form--inputField {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    padding: 1%;
+    opacity: 0;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+  .main__form--nav {
+    width: 95vw;
+    height: auto;
+  }
   .nav__buttons--left {
     width: 30vw;
   }
   .nav__buttons--rigth {
     width: 60vw;
+  }
+  .offcanvas-body {
+    width: 100%;
+    height: 150vh;
+    margin-left: -5%;
+  }
+  .offcanvas-body li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-icons {
+    width: 100%;
+    height: 10vh;
+  }
+  .aside-icons img {
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle {
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a {
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li {
+    list-style: none;
   }
 }
 @media only screen and (min-width: 768px) {
+  .main__section--btn {
+    width: 100%;
+  }
+  .main__section--btn:hover {
+    background-color: white;
+    color: blue;
+  }
+  .section__search--buscar {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .section__search--input {
+    width: 90%;
+    margin: 2%;
+    border: none;
+    outline: none;
+  }
+  .section__search--icon {
+    font-size: 20px;
+  }
+  .section__search--buscar:hover {
+    border: 1px solid gray;
+  }
+  .section__search--buscar:focus-within {
+    border: 2px solid blue;
+  }
+  .section__search--btn:hover {
+    color: blue;
+    background-color: white;
+  }
+  .section__nav--menu {
+    width: auto;
+  }
+  .main__form--content {
+    width: 100vw;
+    height: 35vh;
+    resize: none;
+    font-family: monospace;
+    outline: none;
+  }
+  .main__form--input {
+    width: 50%;
+    position: relative;
+  }
+  .main__form--inputLabel {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    position: relative;
+    text-align: start;
+  }
+  .main__form--inputField {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    padding: 1%;
+    opacity: 0;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
   .nav__buttons--left {
     width: 60vw;
   }
   .nav__buttons--rigth {
     width: 30vw;
+  }
+  .main__content--data {
+    padding-left: 8%;
+  }
+  .card__bottom--text {
+    font-size: 10px;
+  }
+  .header__nav--btn:hover {
+    color: white !important;
+  }
+  .offcanvas-body {
+    width: 100%;
+    height: 150vh;
+    margin-left: -5%;
+  }
+  .offcanvas-body li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-icons {
+    width: 100%;
+    height: 10vh;
+    margin-left: 5%;
+  }
+  .aside-icons img {
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle {
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a {
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li {
+    list-style: none;
+  }
+  #aside-list {
+    text-align: left;
+  }
+  #aside-list li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-section-tags {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 45%;
+  }
+  .aside-section-tags h5 {
+    text-align: left;
+    width: 50%;
+    margin-left: 5%;
+  }
+  .aside-section-tags img {
+    width: 50px;
+    height: 25px;
+  }
+  .aside-section-cards {
+    margin: 7.5%;
+    text-align: left;
+  }
+  .aside-section-cards a {
+    font-weight: 700;
   }
 }
 @media only screen and (min-width: 992px) {
+  .section__search--buscar {
+    width: 95%;
+    border: 1px solid black;
+    background-color: green;
+  }
+  .section__nav--menu {
+    margin-left: 2%;
+    width: 95%;
+  }
+  .nav__menu--title {
+    margin-right: auto;
+  }
   .nav__buttons--left {
     width: 60vw;
   }
   .nav__buttons--rigth {
     width: 30vw;
+  }
+  .mongo__img {
+    cursor: pointer;
+  }
+  .header__nav--btn:hover {
+    color: white;
+  }
+  .header__nav--btn:hover {
+    color: white !important;
+  }
+  .mongo__listings {
+    line-height: 0%;
+  }
+  .offcanvas-body {
+    width: 100%;
+    height: 150vh;
+    margin-left: -5%;
+  }
+  .offcanvas-body li {
+    width: 100%;
+    height: 40px;
+  }
+  .aside-icons {
+    width: 100%;
+    height: 10vh;
+  }
+  .aside-icons img {
+    width: 50px;
+    height: 25px;
+  }
+  .offcanvas-subtitle {
+    width: 100%;
+    height: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .offcanvas-list a {
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-list li {
+    list-style: none;
   }
 }/*# sourceMappingURL=style.css.map */

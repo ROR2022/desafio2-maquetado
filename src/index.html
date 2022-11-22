@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../images/iconLogo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../images/iconLogo.ico"
+      type="image/x-icon"
+    />
     <title>Desafio2 Maquetado-Bootstrap</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -15,89 +19,511 @@
   </head>
 
   <body>
-    <header>
-    <nav class="navbar navbar-expand-md  bg-light justify-content-around">
-      <div
-        class="nav__buttons--left w-lg-75 d-flex align-items-center justify-content-start"
-      >
-        <button
-          class="navbar-toggler noOutline border border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample"
-        >
-          <img src="../images/icon-menu.svg" alt="" />
-        </button>
-
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-md justify-content-around">
         <div
-          class="offcanvas offcanvas-start w-75 d-md-none d-lg-none"
-          tabindex="-1"
-          id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel"
+          class="nav__buttons--left w-lg-75 d-flex align-items-center justify-content-start"
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-              Este es el menu oculto
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div>Aqui va el contenido</div>
-          </div>
-        </div>
-
-        <a href="index.html">
-          <img class="logoDev ms-1" src="../images/logo1.png" alt="logo" />
-        </a>
-
-        <div
-          class="border ms-3 p-1 w-75 rounded bg-white d-none d-md-flex d-lg-flex justify-content-between"
-        >
-          <input
-            class="border border-0 w-75"
-            type="text"
-            style="outline: none"
-            placeholder="Search"
-          />
-          <a class="btn btn-light fs-5" href="#">🔍</a>
-        </div>
-      </div>
-
-      <div
-        class="nav__buttons--rigth me-2 d-flex align-items-center justify-content-end"
-      >
-        <a class="fs-3 me-2 btn btn-light d-lg-none" href="search.html">🔍</a>
-
-        <a href="new.html">
           <button
-            class="btn btn-light btn-link me-2 text-dark d-none d-lg-inline"
-            type="submit"
+            class="navbar-toggler noOutline border border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
           >
-            Login
-          </button></a
-        >
-
-        <a href="new.html">
-          <button class="btn btn-outline-primary" type="submit">
-            Create account
+            <img src="../images/icon-menu.svg" alt="" />
           </button>
-        </a>
-      </div>
-    </nav>
-  </header>
-    <main class="row border text-center">
-      <section class="d-none d-md-block col-md-4 col-lg-3 aside_section border">Aside Section</section>
-      <section class="col-sm-12 col-md-8 col-lg-6 main_section border">
-        <nav class="border">navigation INDEX</nav>
-        <div class="articulos border">articulos INDEX</div>
+
+          <div
+            class="offcanvas offcanvas-start w-75 d-md-none d-lg-none"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                DEV Community 👩‍💻👨‍💻
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row vh-100">
+                <div class="col-12">
+                  <ul class="offcanvas-list">
+                    <li><a href="#">🏠 Home</a></li>
+                    <li><a href="#">📖 Reading List</a></li>
+                    <li><a href="#">📃 Listings</a></li>
+                    <li><a href="#">🎙 Podcasts</a></li>
+                    <li><a href="#">🎥 Videos</a></li>
+                    <li><a href="#">🏷 Tags</a></li>
+                    <li><a href="#">💡 FAQ</a></li>
+                    <li><a href="#">🛍 Forem Shop</a></li>
+                    <li><a href="#">♥ Sponsors</a></li>
+                    <li><a href="#">⁉ About</a></li>
+                    <li><a href="#">📯 Contact</a></li>
+                    <li><a href="#">📖 Guides</a></li>
+                    <li><a href="#">🤔 Software Comparisons</a></li>
+                  </ul>
+                  <div class="offcanvas-subtitle"><h5>Other</h5></div>
+
+                  <ul class="offcanvas-list">
+                    <li><a href="#">👍 Code of Conduct</a></li>
+                    <li><a href="#">😎 Privacy Policy</a></li>
+                    <li><a href="#">📜 Terms of use</a></li>
+                  </ul>
+                  <div class="aside-icons">
+                    <div class="row d-flex justify-content-around">
+                      <img src="../images/twitter.png" alt="Twitter-icon" />
+                      <img src="../images/facebook.png" alt="Facebook-icon" />
+                      <img src="../images/github.png" alt="Github-icon" />
+                      <img src="../images/instagram.png" alt="Instagram-logo" />
+                      <img src="../images/twitch.png" alt="twitch-logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html">
+            <img class="logoDev ms-1" src="../images/logo1.png" alt="logo" />
+          </a>
+
+          <div
+            class="border ms-3 p-1 w-75 rounded bg-white d-none d-md-flex d-lg-flex justify-content-between"
+          >
+            <input
+              class="border border-0 w-75"
+              type="text"
+              style="outline: none"
+              placeholder="Search"
+            />
+            <a class="btn btn-light fs-5" href="#">🔍</a>
+          </div>
+        </div>
+
+        <div
+          class="nav__buttons--rigth me-2 d-flex align-items-center justify-content-end"
+        >
+          <a
+            class="fs-3 me-2 btn btn-light d-md-none d-lg-none"
+            href="search.html"
+            >🔍</a
+          >
+
+          <a href="create.html">
+            <button
+              class="header__nav--btn btn btn-outline-primary text-primary fw-bolder me-2 d-none d-md-inline d-lg-inline"
+              type="submit"
+            >
+              Create Post
+            </button></a
+          >
+
+          <a href="notifications.html">
+            <div class="icon__notifications fs-3 btn btn-light">🔔</div>
+          </a>
+          
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="border border-0 rounded w-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+          <img
+          class="user__data--img"
+          src="../images/user__img.jpg"
+          alt="foto"
+        />
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal__name d-flex flex-column btn btn-light btn-light text-start">
+                    <h1 class="fs-5" id="exampleModalLabel">
+                      Hafiz Muhammad Bilal
+                    </h1>
+                    <h4 class="fs-6"><small>@HafizMB</small></h4>
+                  </div>
+                  
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul class="p-0 d-flex flex-column align-items-start justify-content-start w-100">
+                    <li class="btn btn-light btn-link w-100 text-start">Dashboard</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Create Post</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Reading List</li>
+                    <li class="btn btn-light btn-link w-100 text-start">Settings</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-link btn-light"
+                    data-bs-dismiss="modal"
+                  >
+                    Sign Out
+                  </button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="row text-center bg-light">
+      <section class="d-none d-md-block col-md-4 col-lg-3 aside_section border">
+        <section
+          class="d-none d-md-flex col-md-4 col-lg-3 aside_section border"
+        >
+          <div class="row vh-100" id="aside-section">
+            <div class="col-12" id="aside-list">
+              <ul class="offcanvas-list">
+                <li><a href="#">🏠 Home</a></li>
+                <li><a href="#">📖 Reading List</a></li>
+                <li><a href="#">📃 Listings</a></li>
+                <li><a href="#">🎙 Podcasts</a></li>
+                <li><a href="#">🎥 Videos</a></li>
+                <li><a href="#">🏷 Tags</a></li>
+                <li><a href="#">💡 FAQ</a></li>
+                <li><a href="#">🛍 Forem Shop</a></li>
+                <li><a href="#">♥ Sponsors</a></li>
+                <li><a href="#">⁉ About</a></li>
+                <li><a href="#">📯 Contact</a></li>
+                <li><a href="#">📖 Guides</a></li>
+                <li><a href="#">🤔 Software Comparisons</a></li>
+              </ul>
+              <div class="offcanvas-subtitle"><h5>Other</h5></div>
+
+              <ul class="offcanvas-list">
+                <li><a href="#">👍 Code of Conduct</a></li>
+                <li><a href="#">😎 Privacy Policy</a></li>
+                <li><a href="#">📜 Terms of use</a></li>
+              </ul>
+              <div class="aside-icons">
+                <div class="row d-flex justify-content-around">
+                  <img src="../images/twitter.png" alt="Twitter-icon" />
+                  <img src="../images/facebook.png" alt="Facebook-icon" />
+                  <img src="../images/github.png" alt="Github-icon" />
+                  <img src="../images/instagram.png" alt="Instagram-logo" />
+                  <img src="../images/twitch.png" alt="twitch-logo" />
+                </div>
+              </div>
+            </div>
+            <div class="aside-section-tags">
+              <div class="aside-section-tags-header">
+                <div class="row d-flex justify-content-between">
+                  <h5>My Tags</h5>
+                  <img src="../images/setting.png" alt="settings-icon" />
+                </div>
+              </div>
+            </div>
+            <div class="aside-section-cards">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../images/aside-card-1.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Calling all early-career developers & coding mentors!
+                  </h5>
+                  <p class="card-text">
+                    Join CodeNewbie Community: a supportive space for coding
+                    newbies to connect & express themselves.
+                  </p>
+                  <a href="#">->Get in on the fun!</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../images/aside-card-2.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title h4">The Forem Shop is Here!</h5>
+                  <a href="#">>>Shop Forem, DEV, and CodeNewbie merch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
-      <section class="d-none d-lg-block col-lg-3 aside_section border">Mongo Section</section>
+
+      <section class="main_section col-sm-12 col-md-8 col-lg-6">
+        <nav class="navbar mt-3 p-0">
+          <ul
+            class="d-flex w-100 align-items-center justify-content-start mb-3 p-0"
+          >
+            <li class="fs-4 fw-bold btn btn-light">Relevant</li>
+            <li class="mx-3 btn btn-link">Latest</li>
+            <li class="mx-3 btn btn-link">Top</li>
+          </ul>
+        </nav>
+
+        <div class="main__section--articles container-fluid">
+          <div class="card" style="width: 100%">
+            <img
+              src="../images/react_universe.png"
+              class="card-img-top"
+              alt="react_universe"
+            />
+            <div class="card-body text-start">
+              <div class="user__data my-3 d-flex w-100">
+                <img
+                  class="user__data--img"
+                  src="../images/user__img.jpg"
+                  alt=""
+                />
+                <div class="user__data--text">
+                  <h4 class="user__data--name">Hafiz Muhammad Bilal</h4>
+                  <p class="user__data--date">Nov. 16 (2 days ago)</p>
+                </div>
+              </div>
+              <div class="main__content--data">
+                <h5 class="card-title fw-bolder link__efect">
+                  React - Best Practices
+                </h5>
+                <nav class="navbar__hashtags">
+                  <ul class="ps-0 d-flex w-100 justify-content-start">
+                    <li class="btn btn-light"><small>#react</small></li>
+                    <li class="btn btn-light"><small>#webdev</small></li>
+                    <li class="btn btn-light"><small>#javascript</small></li>
+                    <li class="btn btn-light"><small>#begginers</small></li>
+                  </ul>
+                </nav>
+                <div
+                  class="card__bottom--text container-fluid d-flex w-100 p-0"
+                >
+                  <div
+                    class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
+                  >
+                    <div class="card__reactions--likes d-flex btn btn-light">
+                      <div class="like__logo">💟</div>
+                      <div class="like__number ms-1"><small>234</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Reactions
+                      </div>
+                    </div>
+                    <div class="card__reactions--coments d-flex btn btn-light">
+                      <div class="comment__logo">🗨️</div>
+                      <div class="comment__number ms-1"><small>17</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Comments
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card__other--data d-flex align-items-center justify-content-end w-50"
+                  >
+                    <div class="data__read"><small>4 min read</small></div>
+                    <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" style="width: 100%">
+            <div class="card-body text-start">
+              <div class="user__data my-3 d-flex w-100">
+                <img
+                  class="user__data--img"
+                  src="../images/user__img.jpg"
+                  alt=""
+                />
+                <div class="user__data--text">
+                  <h4 class="user__data--name">Hafiz Muhammad Bilal</h4>
+                  <p class="user__data--date">Nov. 16 (2 days ago)</p>
+                </div>
+              </div>
+              <div class="main__content--data">
+                <h5 class="card-title fw-bolder link__efect">
+                  React - Best Practices
+                </h5>
+                <nav class="navbar__hashtags">
+                  <ul class="ps-0 d-flex w-100 justify-content-start">
+                    <li class="btn btn-light"><small>#react</small></li>
+                    <li class="btn btn-light"><small>#webdev</small></li>
+                    <li class="btn btn-light"><small>#javascript</small></li>
+                    <li class="btn btn-light"><small>#begginers</small></li>
+                  </ul>
+                </nav>
+                <div
+                  class="card__bottom--text container-fluid d-flex w-100 p-0"
+                >
+                  <div
+                    class="card__reactions d-flex justify-content-start align-items-center w-50 p-0"
+                  >
+                    <div class="card__reactions--likes d-flex btn btn-light">
+                      <div class="like__logo">💟</div>
+                      <div class="like__number ms-1"><small>234</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Reactions
+                      </div>
+                    </div>
+                    <div class="card__reactions--coments d-flex btn btn-light">
+                      <div class="comment__logo">🗨️</div>
+                      <div class="comment__number ms-1"><small>17</small></div>
+                      <div class="like__text ms-1 d-none d-md-block">
+                        Comments
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card__other--data d-flex align-items-center justify-content-end w-50"
+                  >
+                    <div class="data__read"><small>4 min read</small></div>
+                    <div class="data__icon fs-3 ms-1 btn btn-light">📄</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aside_section--mongo d-none d-lg-block col-lg-3">
+        <div class="mongo__first--section border rounded mt-4 me-4">
+          <img
+            class="mongo__img w-100 rounded"
+            src="../images/mongo1.png"
+            alt=""
+          />
+          <h5 class="card-title fw-bolder link__efect my-2">
+            React - Best Practices
+          </h5>
+          <ul class="p-0">
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+          </ul>
+          <div class="mongo__buttons d-flex flex-column m-3">
+            <button class="btn btn-primary">Share your Proyect</button>
+            <button class="btn btn-secondary mt-3">See all posts</button>
+          </div>
+        </div>
+
+        <div class="mongo__second--section border rounded mt-4 me-4 mb-3">
+          <div
+            class="mongo__listings d-flex mt-3 py-2 border-bottom justify-content-between w-100"
+          >
+            <p class="fs-4 ms-2 fw-bold">Listings</p>
+            <p class="fs-6 link__efect text-primary border fw-bold">
+              <small>See all</small>
+            </p>
+          </div>
+          <ul class="p-0 mb-0">
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 border-bottom text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+          </ul>
+          <div class="listings__bottom--btn link__efect py-2 fw-bold fs-6">
+            <small>Create a listing</small>
+          </div>
+        </div>
+
+        <div class="mongo__third--section border rounded mt-4 me-4 mb-3">
+          <p class="fs-3 p-2 link__efect text-start border-bottom fw-bold">
+            <small>#help</small>
+          </p>
+          <ul class="p-0 mb-0">
+            <li
+              class="p-0 btn btn-light w-100 link__efect py-2 border-bottom text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+            <li
+              class="p-0 btn btn-light w-100 link__efect border-bottom py-2 text-start ps-3"
+            >
+              Mongo Atlas Hackaton
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="border text-center">este es el footer</footer>
